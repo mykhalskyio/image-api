@@ -28,7 +28,7 @@ func newImageController(imgService ImageService) *ImageController {
 
 // upload image
 func (img *ImageController) upload(ctx *gin.Context) {
-	file, err := ctx.FormFile("photo")
+	file, err := ctx.FormFile("image")
 	if err != nil {
 		ctx.AbortWithError(http.StatusBadRequest, err)
 		return
