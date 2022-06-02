@@ -17,3 +17,8 @@ Run make file
 Run migrate
 
     $ make migrate-init
+
+## Endpoints
+* /api/upload (form-data, image)
+* /api/download/id?quality=100/75/50/25
+* /api/delete/id
