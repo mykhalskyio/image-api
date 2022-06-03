@@ -119,19 +119,19 @@ func (img *ImageService) UploadToDB() {
 	for msg := range msgs {
 		json.Unmarshal(msg.Body, &imageOriginal)
 
-		path = fmt.Sprintf("100-%s", imageOriginal.ImageName)
+		path = fmt.Sprintf("images/100-%s", imageOriginal.ImageName)
 		ioutil.WriteFile(path, imageOriginal.Image, 0644)
 
 		image75, _ = resize.ImgResize(path, 75)
-		path75 = fmt.Sprintf("75-%s", imageOriginal.ImageName)
+		path75 = fmt.Sprintf("images/75-%s", imageOriginal.ImageName)
 		ioutil.WriteFile(path75, image75, 0644)
 
 		image50, _ = resize.ImgResize(path, 50)
-		path50 = fmt.Sprintf("50-%s", imageOriginal.ImageName)
+		path50 = fmt.Sprintf("images/50-%s", imageOriginal.ImageName)
 		ioutil.WriteFile(path50, image50, 0644)
 
 		image25, _ = resize.ImgResize(path, 25)
-		path25 = fmt.Sprintf("25-%s", imageOriginal.ImageName)
+		path25 = fmt.Sprintf("images/25-%s", imageOriginal.ImageName)
 		ioutil.WriteFile(path25, image25, 0644)
 
 		imageStruct = entity.Image{
