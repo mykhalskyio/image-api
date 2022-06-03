@@ -33,6 +33,6 @@ Run migration
     $ docker run -v ./schema:/migrations --network host migrate/migrate     -path=/migrations/ -database postgres://postgres:qwerty123@localhost:54320/postgres?sslmode=disable up
 
 ## Endpoints
-* /api/upload (form-data, image)
-* /api/download/id?quality=100/75/50/25
-* /api/delete/id
+* POST   - /api/upload (form-data, image)
+* GET    - /api/download/id?quality=100/75/50/25
+* DELETE - /api/delete/id
