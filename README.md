@@ -1,3 +1,7 @@
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/mykhalskyio/image-api)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mykhalskyio/image-api)](https://goreportcard.com/report/github.com/mykhalskyio/image-api)
+![Github Repository Size](https://img.shields.io/github/repo-size/mykhalskyio/image-api)
+
 # Image API
 
 ## Requirements
